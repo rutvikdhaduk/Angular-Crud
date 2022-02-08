@@ -1,0 +1,145 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link">Crud</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button type="button" class="btn btn-outline-danger my-2 my" data-toggle="modal"
+        data-target="#AddModel">Add</button>
+    </form>
+  </div>
+</nav>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Company Name:</th>
+      <th scope="col">First Name:</th>
+      <th scope="col">Last Name:</th>
+      <th scope="col">Email:</th>
+      <th scope="col">Mobile No:</th>
+      <th scope="col">Salary</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let item of this.EmoloyDetails">
+      <th scope="row">{{item.id}}</th>
+      <td>{{item.companyename}}</td>
+      <td>{{item.Fname}}</td>
+      <td>{{item.Lname}}</td>
+      <td>{{item.email}}</td>
+      <td>{{item.mobileno}}</td>
+      <td>{{item.salary}}</td>
+      <td>
+        <button type="button" class="btn btn-outline-danger my-2 my" data-toggle="modal"
+        data-target="#EditModel" (click)="filldatainedit(item)">Edit</button>
+        <button class="btn btn-success ml-3" (click)="Delete(item.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Vertically centered modal -->
+
+<!-- Modal -->
+
+<!-- Add Medel -->
+<div class="modal fade" id="AddModel" tabindex="-1" aria-labelledby="EditModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Employe Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Company Name:</label>
+            <input type="text" [(ngModel)]="AddEmoloyDetails.companyename" name="EmpName" class="form-control" id="EmpName">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">First Name:</label>
+            <input type="text" [(ngModel)]="AddEmoloyDetails.Fname" name="fname" class="form-control" id="Fname">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Last Name:</label>
+            <input type="text" [(ngModel)]="AddEmoloyDetails.Lname" name="lname" class="form-control" id="Lname">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Email:</label>
+            <input type="email" [(ngModel)]="AddEmoloyDetails.email" name="Email" class="form-control" id="Email"
+              aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Mobile No:</label>
+            <input type="mobile" [(ngModel)]="AddEmoloyDetails.mobileno" name="Mobileno" class="form-control" id="Mobileno">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Salary:</label>
+            <input type="number" [(ngModel)]="AddEmoloyDetails.salary" name="salary" class="form-control" id="Salary">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="savedata()">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Edit Medel -->
+<div class="modal fade" id="EditModel" tabindex="-1" aria-labelledby="AddModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabeldf">Edit Employe Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" *ngIf="editEmoloyDetails && editEmoloyDetails.companyename">
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Employe Name:</label>
+            <input type="text" [(ngModel)]="editEmoloyDetails.companyename" name="EmpName" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassjhword1">First Name:</label>
+            <input type="text" [(ngModel)]="editEmoloyDetails.Fname" name="fname" class="form-control" id="Fname">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassffword1">Last Name:</label>
+            <input type="text" [(ngModel)]="editEmoloyDetails.Lname" name="lname" class="form-control" id="Lname">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPafssword1">Email:</label>
+            <input type="email" [(ngModel)]="editEmoloyDetails.email" name="Email" class="form-control" id="Email"
+              aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPadssword1">Mobile No:</label>
+            <input type="mobile" [(ngModel)]="editEmoloyDetails.mobileno" name="Mobileno" class="form-control" id="Mobileno">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPasserword1">Salary:</label>
+            <input type="number" [(ngModel)]="editEmoloyDetails.salary" name="salary" class="form-control" id="Salary">
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" >Save</button>
+      </div>
+    </div>
+  </div>
+</div>
