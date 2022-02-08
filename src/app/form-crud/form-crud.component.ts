@@ -27,8 +27,7 @@ export class FormCrudComponent implements OnInit {
   savedata() {
     if (this.AddEmoloyDetails.companyename && this.AddEmoloyDetails.Fname && this.AddEmoloyDetails.Lname && this.AddEmoloyDetails.email && this.AddEmoloyDetails.mobileno && this.AddEmoloyDetails.salary) {
       this.data.addData(this.AddEmoloyDetails).subscribe((x) => {
-        
-        this.AddEmoloyDetails = new Form();
+        this.getData();
       });
     }
     else {
@@ -46,7 +45,7 @@ export class FormCrudComponent implements OnInit {
 }
 
 export class Form {
-  id:number;
+  id: number;
   companyename: string;
   Fname: string;
   Lname: string;
