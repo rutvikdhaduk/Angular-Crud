@@ -8,8 +8,8 @@ import { TestService, Data } from '../test.service';
 })
 export class FormCrudComponent implements OnInit {
   EmoloyDetails: Array<Form> = new Array<Form>();
-  editEmoloyDetails: Form;
   AddEmoloyDetails: Form;
+  editEmoloyDetails: Form;
 
   constructor(private data: TestService) { }
 
