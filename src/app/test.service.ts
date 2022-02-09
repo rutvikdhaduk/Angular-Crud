@@ -16,11 +16,11 @@ export class TestService {
   addData(body):Observable<Array<Data>>{
     return this.http.post<Array<Data>>(this.url, body);
   }
-  updateData(id,body){
-    this.http.put(this.url + id, body);
+  updateData(id,body):Observable<Array<Data>>{
+    return this.http.put<Array<Data>>(this.url + id, body);
   }
-  delData(id){
-    this.http.delete(this.url+id);
+  delData(id):Observable<Array<Data>>{
+    return this.http.delete<Array<Data>>(this.url+id);
   }
 }
 
