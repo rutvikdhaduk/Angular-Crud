@@ -27,7 +27,7 @@ export class FormCrudComponent implements OnInit {
   savedata() {
     if (this.AddEmoloyDetails.companyename && this.AddEmoloyDetails.Fname && this.AddEmoloyDetails.Lname && this.AddEmoloyDetails.email && this.AddEmoloyDetails.mobileno && this.AddEmoloyDetails.salary) {
       this.data.addData(this.AddEmoloyDetails).subscribe((x) => {
-       this.getData();
+        this.getData();
         this.AddEmoloyDetails = new Form();
       });
     }
@@ -36,18 +36,17 @@ export class FormCrudComponent implements OnInit {
     }
   }
 
-  filldatainedit(detail: Form,id) {
-    this.data.updateData(id,detail).subscribe(u=>{
-      console.log("Update=",u);
-      this.editEmoloyDetails = detail;
+  filldatainedit(detail: Form) {
+    this.editEmoloyDetails = detail;
+  }
+  editData() {
+    this.data.updateData(this.editEmoloyDetails).subscribe(d => {
+      this.getData();
     })
   }
 
   Delete(id) {
-    this.data.delData(id).subscribe(d=>{
-      let datas=this.EmoloyDetails;
-      let index=datas.findIndex(x=>x.id===id);
-      datas.splice(index,1);
+    this.data.delData(id).subscribe(d => {
       this.getData();
     })
   }

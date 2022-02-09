@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -7,24 +7,24 @@ import { Observable } from 'rxjs';
 })
 export class TestService {
 
-  constructor(private http:HttpClient) { }
-  url="http://localhost:3000/Employe/";
+  constructor(private http: HttpClient) { }
+  url = "http://localhost:3000/Employe";
 
-  getData():Observable<Array<Data>>{
+  getData() {
     return this.http.get<Array<Data>>(this.url);
   }
-  addData(body):Observable<Array<Data>>{
-    return this.http.post<Array<Data>>(this.url, body);
+  addData(body) {
+    return this.http.post<Data>(this.url, body);
   }
-  updateData(id,body):Observable<Array<Data>>{
-    return this.http.put<Array<Data>>(this.url + id, body);
+  updateData(body) {
+    return this.http.put<Data>(`${this.url}/${body.id}`, body);
   }
-  delData(id):Observable<Array<Data>>{
-    return this.http.delete<Array<Data>>(this.url+id);
+  delData(id) {
+    return this.http.delete<Data>(`${this.url}/${id}`);
   }
 }
 
-export class Data{
+export class Data {
   id: number = 0;
   companyename: string;
   Fname: string;

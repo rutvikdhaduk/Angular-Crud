@@ -6,5 +6,96 @@
       "author": "typicode"
     }
   ],
-  "Employe": []
+  "Employe": [
+    {
+      "companyename": "Gurukul",
+      "Fname": "Rutvik",
+      "Lname": "D",
+      "email": "rd@gmail.com",
+      "mobileno": "95756252",
+      "salary": 100,
+      "id": 1
+    },
+    {
+      "companyename": "dart",
+      "Fname": "jj",
+      "Lname": "ll",
+      "email": "jl@gmail.com",
+      "mobileno": "95874632159",
+      "salary": 100,
+      "id": 2
+    },
+    {
+      "companyename": "idfg",
+      "Fname": "ja",
+      "Lname": "ls",
+      "email": "jlQ@gmail.com",
+      "mobileno": "9874651230",
+      "salary": 100,
+      "id": 3
+    },
+    {
+      "companyename": "jay",
+      "Fname": "ja",
+      "Lname": "ls",
+      "email": "jay@gmail.com",
+      "mobileno": "9874651230",
+      "salary": 100,
+      "id": 4
+    },
+    {
+      "companyename": "hd",
+      "Fname": "raj",
+      "Lname": "pt",
+      "email": "jlQ@gmail.com",
+      "mobileno": "9874651230",
+      "salary": 100,
+      "id": 5
+    },
+    {
+      "companyename": "Gu",
+      "Fname": "ram",
+      "Lname": "d",
+      "email": "ram@gmail.com",
+      "mobileno": "9874651230",
+      "salary": 100,
+      "id": 6
+    },
+    {
+      "companyename": "sdf",
+      "Fname": "sdf",
+      "Lname": "ls",
+      "email": "sdf@gmail.com",
+      "mobileno": "9874651230",
+      "salary": 100,
+      "id": 7
+    },
+    {
+      "companyename": "tbn",
+      "Fname": "soni",
+      "Lname": "pat",
+      "email": "soni@gmail.com",
+      "mobileno": "9874651230",
+      "salary": 100,
+      "id": 8
+    },
+    {
+      "companyename": "nine",
+      "Fname": "jone",
+      "Lname": "ls",
+      "email": "jl@gmail.com",
+      "mobileno": "9874651230",
+      "salary": 100,
+      "id": 9
+    },
+    {
+      "companyename": "gif",
+      "Fname": "hh",
+      "Lname": "pp",
+      "email": "hhpp@gmail.com",
+      "mobileno": "9874651230",
+      "salary": 100,
+      "id": 10
+    }
+  ]
 }
