@@ -8,94 +8,118 @@
   ],
   "Employe": [
     {
-      "companyename": "Gurukul",
-      "Fname": "Rutvik",
-      "Lname": "D",
-      "email": "rd@gmail.com",
-      "mobileno": "95756252",
+      "address": {
+        "city": "jns",
+        "blockno": "56",
+        "currentAddress": "asdfjw"
+      },
+      "personalDetails": {
+        "addharno": "95864321",
+        "panno": "9874563",
+        "passbookno": "123456789"
+      },
+      "companyename": "hell",
+      "Fname": "adsfjh",
+      "Lname": ";askldfjiqw",
+      "email": "masdkfj@gmail.com",
+      "mobileno": "9876543210",
       "salary": 100,
       "id": 1
     },
     {
-      "companyename": "dart",
-      "Fname": "jj",
-      "Lname": "ll",
-      "email": "jl@gmail.com",
-      "mobileno": "95874632159",
-      "salary": 100,
+      "address": {
+        "city": "jnd",
+        "blockno": "asd",
+        "currentAddress": "fgh"
+      },
+      "personalDetails": {
+        "addharno": "asd",
+        "panno": "fgh",
+        "passbookno": "12345687987"
+      },
+      "companyename": "asd",
+      "Fname": "asd",
+      "Lname": "sdf",
+      "email": "rutvik@gmail.com",
+      "mobileno": "9574475367",
+      "salary": 123,
       "id": 2
     },
     {
-      "companyename": "idfg",
-      "Fname": "ja",
-      "Lname": "ls",
-      "email": "jlQ@gmail.com",
-      "mobileno": "9874651230",
+      "address": {
+        "city": "surat",
+        "blockno": "45",
+        "currentAddress": "hydrabad Gurukul"
+      },
+      "personalDetails": {
+        "addharno": "9876543214",
+        "panno": "958764",
+        "passbookno": "123456789"
+      },
+      "companyename": "Hx2k",
+      "Fname": "Savaliya ",
+      "Lname": "Parth",
+      "email": "sp@gmail.com",
+      "mobileno": "957863413",
       "salary": 100,
       "id": 3
     },
     {
-      "companyename": "jay",
-      "Fname": "ja",
-      "Lname": "ls",
-      "email": "jay@gmail.com",
-      "mobileno": "9874651230",
+      "address": {
+        "city": "jun",
+        "blockno": "65",
+        "currentAddress": "hyd"
+      },
+      "personalDetails": {
+        "addharno": "123456789",
+        "panno": "987654",
+        "passbookno": "3564"
+      },
+      "companyename": "Gurukul",
+      "Fname": "G",
+      "Lname": "Gh",
+      "email": "Gh@gmail.com",
+      "mobileno": "9856741230",
       "salary": 100,
       "id": 4
     },
     {
-      "companyename": "hd",
-      "Fname": "raj",
-      "Lname": "pt",
-      "email": "jlQ@gmail.com",
-      "mobileno": "9874651230",
-      "salary": 100,
+      "address": {
+        "city": "ewr",
+        "blockno": "695",
+        "currentAddress": "keo"
+      },
+      "personalDetails": {
+        "addharno": "987654321",
+        "panno": "77896542",
+        "passbookno": "65932578"
+      },
+      "companyename": "grgrg",
+      "Fname": "er",
+      "Lname": "we",
+      "email": "sad@gmail.com",
+      "mobileno": "6958470321",
+      "salary": 1000,
       "id": 5
     },
     {
-      "companyename": "Gu",
-      "Fname": "ram",
-      "Lname": "d",
-      "email": "ram@gmail.com",
-      "mobileno": "9874651230",
+      "address": {
+        "city": "knd",
+        "blockno": "85",
+        "currentAddress": "jwkadsf"
+      },
+      "personalDetails": {
+        "addharno": "65725844",
+        "panno": "472145655431",
+        "passbookno": "123456789"
+      },
+      "companyename": "rahul",
+      "Fname": "jone",
+      "Lname": "piter",
+      "email": "rj@gmail.com",
+      "mobileno": "3652145879",
       "salary": 100,
       "id": 6
-    },
-    {
-      "companyename": "sdf",
-      "Fname": "sdf",
-      "Lname": "ls",
-      "email": "sdf@gmail.com",
-      "mobileno": "9874651230",
-      "salary": 100,
-      "id": 7
-    },
-    {
-      "companyename": "tbn",
-      "Fname": "soni",
-      "Lname": "pat",
-      "email": "soni@gmail.com",
-      "mobileno": "9874651230",
-      "salary": 100,
-      "id": 8
-    },
-    {
-      "companyename": "nine",
-      "Fname": "jone",
-      "Lname": "ls",
-      "email": "jl@gmail.com",
-      "mobileno": "9874651230",
-      "salary": 100,
-      "id": 9
-    },
-    {
-      "companyename": "gif",
-      "Fname": "hh",
-      "Lname": "pp",
-      "email": "hhpp@gmail.com",
-      "mobileno": "9874651230",
-      "salary": 100,
-      "id": 10
     }
   ]
 }

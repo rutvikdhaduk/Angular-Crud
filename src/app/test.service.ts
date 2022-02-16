@@ -13,12 +13,15 @@ export class TestService {
   getData() {
     return this.http.get<Array<Data>>(this.url);
   }
+
   addData(body) {
     return this.http.post<Data>(this.url, body);
   }
+
   updateData(body) {
     return this.http.put<Data>(`${this.url}/${body.id}`, body);
   }
+
   delData(id) {
     return this.http.delete<Data>(`${this.url}/${id}`);
   }
@@ -31,5 +34,18 @@ export class Data {
   Lname: string;
   email: string;
   mobileno: string;
+  address:Addressing;
   salary: string;
+  personalDetails:PersonalData;
+}
+export class Addressing{
+  city:string;
+  blockno:string;
+  currentAddress:string;
+}
+
+export class PersonalData{
+  addharno:string;
+  panno:string;
+  passbookno:string;
 }

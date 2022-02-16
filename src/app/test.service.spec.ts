@@ -11,6 +11,6 @@ describe('TestService', () => {
   });
 
   it('should be created', () => {
-    expect(service).toBeTruthy();
+    expect(service.addData).toBeTruthy();
   });
 });
