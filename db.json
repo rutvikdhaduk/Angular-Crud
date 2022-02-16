@@ -20,7 +20,7 @@
       },
       "companyename": "hell",
       "Fname": "adsfjh",
-      "Lname": ";askldfjiqw",
+      "Lname": "askldfjiqw",
       "email": "masdkfj@gmail.com",
       "mobileno": "9876543210",
       "salary": 100,
@@ -101,25 +101,6 @@
       "mobileno": "6958470321",
       "salary": 1000,
       "id": 5
-    },
-    {
-      "address": {
-        "city": "knd",
-        "blockno": "85",
-        "currentAddress": "jwkadsf"
-      },
-      "personalDetails": {
-        "addharno": "65725844",
-        "panno": "472145655431",
-        "passbookno": "123456789"
-      },
-      "companyename": "rahul",
-      "Fname": "jone",
-      "Lname": "piter",
-      "email": "rj@gmail.com",
-      "mobileno": "3652145879",
-      "salary": 100,
-      "id": 6
     }
   ]
 }

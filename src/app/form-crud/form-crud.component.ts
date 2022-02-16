@@ -8,15 +8,15 @@ import { TestService, Data } from '../test.service';
 })
 
 export class FormCrudComponent implements OnInit {
-  EmoloyDetails: Array<Form> = new Array<Form>();
-  AddEmoloyDetails: Form;
-  editEmoloyDetails: Form;
-
-  filterstring:string
+  EmployeeDetails: Array<Employee> = new Array<Employee>();
+  FilterEmployeeDetails: Array<Employee> = new Array<Employee>();
+  AddEmoloyDetails: Employee;
+  editEmoloyDetails: Employee;
+  searchValue: string;
   constructor(private data: TestService) { }
 
   ngOnInit(): void {
-    this.AddEmoloyDetails = new Form();
+    this.AddEmoloyDetails = new Employee();
     this.AddEmoloyDetails.address = new Addressing();
     this.AddEmoloyDetails.personalDetails = new PersonalData();
     this.getData();
@@ -25,7 +25,8 @@ export class FormCrudComponent implements OnInit {
   private getData() {
     this.data.getData().subscribe(x => {
       console.log(x);
-      this.EmoloyDetails = x;
+      this.EmployeeDetails = x;
+      this.FilterEmployeeDetails = x;
     });
   }
 
@@ -34,7 +35,7 @@ export class FormCrudComponent implements OnInit {
     if (this.AddEmoloyDetails.companyename && this.AddEmoloyDetails.Fname && this.AddEmoloyDetails.Lname && this.AddEmoloyDetails.email && this.AddEmoloyDetails.mobileno && this.AddEmoloyDetails.salary && this.AddEmoloyDetails.address.city && this.AddEmoloyDetails.address.blockno && this.AddEmoloyDetails.address.currentAddress && this.AddEmoloyDetails.personalDetails.addharno && this.AddEmoloyDetails.personalDetails.panno && this.AddEmoloyDetails.personalDetails.passbookno) {
       this.data.addData(this.AddEmoloyDetails).subscribe((x) => {
         this.getData();
-        this.AddEmoloyDetails = new Form();
+        this.AddEmoloyDetails = new Employee();
         this.AddEmoloyDetails.address = new Addressing();
         this.AddEmoloyDetails.personalDetails = new PersonalData();
       });
@@ -44,7 +45,7 @@ export class FormCrudComponent implements OnInit {
     }
   }
 
-  filldatainedit(detail: Form) {
+  filldatainedit(detail: Employee) {
     this.editEmoloyDetails = detail;
   }
   editData() {
@@ -52,35 +53,53 @@ export class FormCrudComponent implements OnInit {
       this.getData();
     })
   }
-
-  Delete(id) {
-    this.data.delData(id).subscribe(d => {
-      this.getData();
+  deleteEmployee(item: Employee) {
+    this.data.delData(item.id).subscribe(d => {
+      let index = this.FilterEmployeeDetails.indexOf(item);
+      this.FilterEmployeeDetails.splice(index, 1);
     })
+  }
+  // for Search Employee
+
+  search() {
+    if (this.searchValue) {
+      let searchEmployee = new Array<Employee>();
+      if (this.EmployeeDetails.length > 0) {
+        for (let emp of this.EmployeeDetails) {
+          if (JSON.stringify(emp).toLowerCase().indexOf(this.searchValue.toLowerCase()) > 0) {
+            searchEmployee.push(emp);
+          }
+        }
+        this.FilterEmployeeDetails= searchEmployee;
+      }
+    }
+    else {
+      this.FilterEmployeeDetails = this.EmployeeDetails;
+    }
   }
 
 }
 
-export class Form {
+export class Employee {
   id: number;
   companyename: string;
   Fname: string;
   Lname: string;
   email: string;
   mobileno: string;
-  address:Addressing;
+  address: Addressing;
   salary: string;
-  personalDetails:PersonalData;
+  personalDetails: PersonalData;
 }
 
-export class Addressing{
-  city:string;
-  blockno:string;
-  currentAddress:string;
+export class Addressing {
+  city: string;
+  blockno: string;
+  currentAddress: string;
 }
 
-export class PersonalData{
-  addharno:string;
-  panno:string;
-  passbookno:string;
+export class PersonalData {
+  addharno: string;
+  panno: string;
+  passbookno: string;
 }
