@@ -7,7 +7,6 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormCrudComponent } from './form-crud/form-crud.component';
-import { SecureRoutingModule } from './secure/secure-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,6 @@ import { SecureRoutingModule } from './secure/secure-routing.module';
     FormsModule,
     HttpClientModule,
     RouterModule,
-    SecureRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,17 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SecureComponent } from './secure/secure/secure.component';
+import { FormCrudComponent } from './form-crud/form-crud.component';
 
 const routes: Routes = [
   {
-    path:'',
-    redirectTo:'',
-    pathMatch:'full'
-  },
-  {
-    path:'',
-    loadChildren:()=>import('./secure/secure.module').then(m=>m.SecureModule),
-    component:SecureComponent
+    path:"",
+    component:FormCrudComponent
   },
 ];
 

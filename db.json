@@ -120,6 +120,25 @@
       "Fname": "kat",
       "Lname": "lonejf",
       "id": 6
+    },
+    {
+      "address": {
+        "city": "Junagadh",
+        "blockno": "123",
+        "currentAddress": "f"
+      },
+      "personalDetails": {
+        "addharno": "ryt",
+        "panno": "546",
+        "passbookno": "ttre"
+      },
+      "companyename": "ggg",
+      "Fname": "r",
+      "Lname": "e",
+      "email": "w",
+      "mobileno": "r",
+      "salary": 123,
+      "id": 7
     }
   ]
 }
