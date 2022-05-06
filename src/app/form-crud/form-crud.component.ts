@@ -13,6 +13,7 @@ export class FormCrudComponent implements OnInit {
   AddEmoloyDetails: Employee;
   editEmoloyDetails: Employee;
   searchValue: string;
+
   constructor(private data: TestService) { }
 
   ngOnInit(): void {
@@ -77,7 +78,6 @@ export class FormCrudComponent implements OnInit {
       this.FilterEmployeeDetails = this.EmployeeDetails;
     }
   }
-
 }
 
 export class Employee {

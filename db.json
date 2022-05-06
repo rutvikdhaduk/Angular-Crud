@@ -101,6 +101,25 @@
       "mobileno": "6958470321",
       "salary": 1000,
       "id": 5
+    },
+    {
+      "address": {
+        "city": "ahm",
+        "blockno": "462",
+        "currentAddress": "sdf"
+      },
+      "personalDetails": {
+        "addharno": "987654321",
+        "panno": "123456789",
+        "passbookno": "654987321"
+      },
+      "email": "asd",
+      "mobileno": "asd",
+      "salary": 100,
+      "companyename": "ice",
+      "Fname": "kat",
+      "Lname": "lonejf",
+      "id": 6
     }
   ]
 }
