@@ -9,136 +9,22 @@
   "Employe": [
     {
       "address": {
-        "city": "jns",
-        "blockno": "56",
-        "currentAddress": "asdfjw"
-      },
-      "personalDetails": {
-        "addharno": "95864321",
-        "panno": "9874563",
-        "passbookno": "123456789"
-      },
-      "companyename": "hell",
-      "Fname": "adsfjh",
-      "Lname": "askldfjiqw",
-      "email": "masdkfj@gmail.com",
-      "mobileno": "9876543210",
-      "salary": 100,
-      "id": 1
-    },
-    {
-      "address": {
-        "city": "jnd",
-        "blockno": "asd",
-        "currentAddress": "fgh"
-      },
-      "personalDetails": {
-        "addharno": "asd",
-        "panno": "fgh",
-        "passbookno": "12345687987"
-      },
-      "companyename": "asd",
-      "Fname": "asd",
-      "Lname": "sdf",
-      "email": "rutvik@gmail.com",
-      "mobileno": "9574475367",
-      "salary": 123,
-      "id": 2
-    },
-    {
-      "address": {
-        "city": "surat",
-        "blockno": "45",
-        "currentAddress": "hydrabad Gurukul"
-      },
-      "personalDetails": {
-        "addharno": "9876543214",
-        "panno": "958764",
-        "passbookno": "123456789"
-      },
-      "companyename": "Hx2k",
-      "Fname": "Savaliya ",
-      "Lname": "Parth",
-      "email": "sp@gmail.com",
-      "mobileno": "957863413",
-      "salary": 100,
-      "id": 3
-    },
-    {
-      "address": {
-        "city": "jun",
+        "city": "sd",
         "blockno": "65",
-        "currentAddress": "hyd"
+        "currentAddress": "ewe"
       },
       "personalDetails": {
-        "addharno": "123456789",
-        "panno": "987654",
-        "passbookno": "3564"
+        "addharno": "78954631",
+        "panno": "32156897/52",
+        "passbookno": "sdfwerwre"
       },
-      "companyename": "Gurukul",
-      "Fname": "G",
-      "Lname": "Gh",
-      "email": "Gh@gmail.com",
-      "mobileno": "9856741230",
-      "salary": 100,
-      "id": 4
-    },
-    {
-      "address": {
-        "city": "ewr",
-        "blockno": "695",
-        "currentAddress": "keo"
-      },
-      "personalDetails": {
-        "addharno": "987654321",
-        "panno": "77896542",
-        "passbookno": "65932578"
-      },
-      "companyename": "grgrg",
-      "Fname": "er",
-      "Lname": "we",
-      "email": "sad@gmail.com",
-      "mobileno": "6958470321",
-      "salary": 1000,
-      "id": 5
-    },
-    {
-      "address": {
-        "city": "ahm",
-        "blockno": "462",
-        "currentAddress": "sdf"
-      },
-      "personalDetails": {
-        "addharno": "987654321",
-        "panno": "123456789",
-        "passbookno": "654987321"
-      },
-      "email": "asd",
-      "mobileno": "asd",
-      "salary": 100,
-      "companyename": "ice",
-      "Fname": "kat",
-      "Lname": "lonejf",
-      "id": 6
-    },
-    {
-      "address": {
-        "city": "Junagadh",
-        "blockno": "123",
-        "currentAddress": "f"
-      },
-      "personalDetails": {
-        "addharno": "ryt",
-        "panno": "546",
-        "passbookno": "ttre"
-      },
-      "companyename": "ggg",
-      "Fname": "r",
-      "Lname": "e",
-      "email": "w",
-      "mobileno": "r",
-      "salary": 123,
-      "id": 7
+      "companyename": "Test",
+      "Fname": "Rd",
+      "Lname": "D",
+      "email": "Rd@gmail.com",
+      "mobileno": "9876543210",
+      "salary": 20000,
+      "id": 1
     }
   ]
 }
